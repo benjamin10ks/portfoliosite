@@ -6,7 +6,7 @@ const generateParticles = (count: number) => {
   return Array.from({ length: count }, () => ({
     id: Math.random(),
     size: Math.random() * 4 + 2, // Particle size between 2 and 6 px
-    x: Math.random() * 100, // X position (percentage of screen width)
+    x: Math.random() * 100 - 1, // X position (percentage of screen width)
     y: Math.random() * 100, // Y position (percentage of screen height)
     opacity: Math.random() * 0.6 + 0.2, // Opacity between 0.2 and 0.8
     duration: Math.random() * 6 + 4, // Float duration (4-10s)
