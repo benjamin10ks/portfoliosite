@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Website",
+  title: "Brendan Kelly",
   description: "SEO GOAT",
 };
 
