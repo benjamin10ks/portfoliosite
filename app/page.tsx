@@ -12,10 +12,10 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="relative bg-gradient-to-t from-black to-gray-800 ">
+    <main className="relative bg-gradient-to-t from-black to-gray-800 min-h-screen">
       <Particles count={80} />
       <div className="min-h-screen flex items-center justify-center p-4">
-        <div className="flex flex-row ">
+        <div className="flex flex-row">
           <div className="text-left mr-[120px] items-center pt-8 pb-8">
             <header>
               <h1 className="text-5xl font-bold text-white-900">
@@ -32,12 +32,18 @@ export default function Home() {
             </section>
           </div>
           <div className="flex items-center">
-            <Image src="/globe.svg" alt="globe" width={400} height={400} />
+            <Image 
+              src="/globe.svg" 
+              alt="globe" 
+              width={400} 
+              height={400}
+              priority
+            />
           </div>
         </div>
       </div>
 
-      <section className="flex flex-col gap-8 justify-center items-center justify-evenly">
+      <section className="flex flex-col gap-8 justify-center items-center justify-evenly py-8">
         <p className="font-bold text-[40px]">Projects</p>
         <ProjectCard
           title="Placeholder"
@@ -56,9 +62,9 @@ export default function Home() {
         />
       </section>
 
-      <footer className="mt-8 text-gray-500">
+      <footer className="mt-8 text-gray-500 text-center py-4">
         <p>&copy; {new Date().getFullYear()}</p>
       </footer>
-    </div>
+    </main>
   );
 }

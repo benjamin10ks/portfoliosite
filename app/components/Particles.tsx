@@ -16,14 +16,18 @@ const generateParticles = (count: number) => {
 };
 
 const Particles = ({ count = 50 }) => {
+  const [mounted, setMounted] = useState(false);
   const [particles, setParticles] = useState<{ id: number; size: number; x: number; y: number; opacity: number; duration: number; driftX: number; driftY: number; }[]>([]);
 
   useEffect(() => {
+    setMounted(true);
     setParticles(generateParticles(count));
   }, [count]);
 
+  if (!mounted) return null;
+
   return (
-    <div>
+    <div className="fixed inset-0 pointer-events-none">
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
