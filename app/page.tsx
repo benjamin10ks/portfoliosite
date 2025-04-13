@@ -18,10 +18,10 @@ export default function Home() {
               <div className="text-gray-300 text-sm space-y-1">
                 <p>brendan.kelly8333@gmail.com</p>
                 <p>
-                  <a href="https://linkedin.com/in/brendan-kelly" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                  <a href="https://www.linkedin.com/in/brendan-kelly-7a8263260/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                     linkedin.com/in/brendan-kelly
                   </a> | 
-                  <a href="https://github.com/benjamin10k" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                  <a href="https://github.com/benjamin10ks" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                     github.com/benjamin10k
                   </a>
                 </p>
@@ -32,7 +32,7 @@ export default function Home() {
               <div className="bg-gray-800/50 p-4 rounded-lg">
                 <h3 className="text-xl font-semibold text-white">Montana State University</h3>
                 <p className="text-gray-300">Bozeman, MT</p>
-                <p className="text-gray-300">Bachelor of Arts in Computer Science, Minor in Japan Studies</p>
+                <p className="text-gray-300">Computer Science</p>
                 <ul className="list-disc list-inside text-gray-300 mt-2">
                 </ul>
               </div>
